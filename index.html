@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tourisme à Berlin 2023: Visiter Berlin, Allemagne - TripAdvisor
+    </title>
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/icons.css" />
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img
+          src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+          alt="TripAdvisor Logo"
+        />
+        <nav>
+          <div>
+            <i class="icon-pencil"></i>
+            <span>Avis</span>
+          </div>
+          <div>
+            <i class="icon-heart"></i>
+            <span>Voyages</span>
+          </div>
+          <div>
+            <i class="icon-notification_bell"></i>
+            <span>Alertes</span>
+          </div>
+          <div><button class="button-sign-up">Connectez-vous</button></div>
+        </nav>
+      </div>
+      <div class="visible-xs">
+        <div><i class="fa-solid fa-bars"></i></div>
+        <div>
+          <img
+            src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+            alt="TripAdvisor Logo"
+          />
+        </div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="menu">
+        <h1><span>Explorez</span> Berlin</h1>
+        <p>
+          Les revenus influencent le choix des expériences présentées sur cette
+          page : en savoir plus.
+        </p>
+        <nav>
+          <div>
+            <span>Hôtels</span>
+            <i class="icon-hotels"></i>
+          </div>
+          <div>
+            <span>Activités</span>
+            <i class="icon-attractions"></i>
+          </div>
+          <div>
+            <span>Locations de vacances</span>
+            <i class="icon-vacation_rentals"></i>
+          </div>
+          <div>
+            <span>Restaurants</span>
+            <i class="icon-restaurants"></i>
+          </div>
+          <div>
+            <span>Forums de voyage</span>
+            <i class="icon-forums"></i>
+          </div>
+          <div class="hidden-xl">
+            <span>Vols</span>
+            <i class="icon-flights"></i>
+          </div>
+          <div class="hidden-xl">
+            <span>Croisières</span>
+            <i class="icon-cruises"></i>
+          </div>
+          <div>
+            <span>Plus</span>
+            <i class="icon-more_horizontal"></i>
+          </div>
+        </nav>
+      </section>
+      <section class="main-images">
+        <div class="images">
+          <div class="column1">
+            <img
+              src="./assets/img/caption.jpg"
+              alt="Une vue d'une rue de Berlin"
+            />
+            <div class="tc-logo">
+              <img src="./assets/img/TC_LL.svg" alt="Traveler Choice 2023" />
+            </div>
+            <div class="all-pictures">
+              <i class="icon-photo"></i>
+              <span>Toutes les photos</span>
+            </div>
+          </div>
+          <div class="small-img">
+            <img
+              src="./assets/img/ubergang.jpg"
+              alt="Une vue d'une rue de Berlin"
+            />
+            <img
+              src="./assets/img/memoriale-dell-olocausto.jpg"
+              alt="Mémorial de l'holocauste de Berlin"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="baseline">
+        <div>
+          <a href="https://www.tripadvisor.fr/Tourism-g4-Europe-Vacations.html"
+            >Europe</a
+          >
+          <i class="icon-single_chevron_right"></i>
+          <a
+            href="https://www.tripadvisor.fr/Tourism-g187275-Germany-Vacations.html"
+            >Allemagne</a
+          >
+          <i class="icon-single_chevron_right"></i>
+          <a
+            href="https://www.tripadvisor.fr/Tourism-g187323-Berlin-Vacations.html"
+            >Berlin</a
+          >
+          <i class="icon-caret_down"></i>
+        </div>
+        <div>Visiter : Berlin</div>
+      </section>
+      <section class="presentation">
+        <div class="description">
+          <h2>Une ville cosmopolite et avant-gardiste</h2>
+          <p>
+            De sa mode jusqu'à son architecture en passant par sa riche histoire
+            politique, Berlin a toujours été une ville d'avant-garde. Le mur de
+            Berlin est un triste rappel de l'atmosphère pesante qui planait sur
+            la ville après la guerre. Malgré tout, les graffitis qui recouvrent
+            désormais ce qu'il en reste sont devenus le symbole du progrès
+            social. Partez découvrir le Weltzeituhr, horloge universelle
+            surmontée d'une reproduction du système solaire, puis remontez le
+            temps à l'occasion d'un dîner au Zur Letzten Instanz, restaurant
+            dont l'origine remonte au XVIe siècle et qui a compté Napoléon et
+            Beethoven parmi ses clients.
+          </p>
+        </div>
+        <div class="voyage">
+          <div>
+            <h3>Berlin : commencez à organiser!</h3>
+            <p>
+              Créez un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </p>
+            <span>Créez un voyage</span>
+          </div>
+          <div>
+            <img src="./assets/img/maps_cnuhsr.png" alt="Image d'une carte" />
+          </div>
+        </div>
+      </section>
+      <section class="highlights">
+        <h2>Berlin : les immanquables</h2>
+        <div>
+          <div class="activities">
+            <div class="first-column">
+              <h4>Se divertir</h4>
+              <p>
+                Des lieux à voir, des rues à explorer et des expériences
+                emblématiques à Berlin.
+              </p>
+              <a
+                href="https://www.tripadvisor.fr/Attractions-g187323-Activities-Berlin.html"
+                ><span>Tout afficher</span>
+              </a>
+            </div>
+            <div class="carrousel">
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/activities/caption (1).jpg" alt="" />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite"><i class="icon-heart"></i></div>
+                </div>
+                <div><h5>East Side Gallery</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>16 872</span>
+                </div>
+                <div>
+                  <p>Sites historiques, Monuments & Points d'intérêt</p>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/activities/caption (2).jpg" alt="" />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>Porte de Brandebourg</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>46 477</span>
+                </div>
+                <div>
+                  <p>Monuments et statues, Monuments & Points d'intérêt</p>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/activities/photo0jpg.jpg" alt="" />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>Tempelhofer Park</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>799</span>
+                </div>
+                <div><p>Parcs</p></div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/activities/grosser-saal.jpg" alt="" />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>Philarmonie de Berlin</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <span>3 241</span>
+                </div>
+                <div><p>Bâtiments architecturaux, Symphonies</p></div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img
+                    src="./assets/img/activities/im-inneren-der-kuppel.jpg"
+                    alt=""
+                  />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>Bundestag</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>35 535</span>
+                </div>
+                <div>
+                  <p>Bâtiments architecturaux, Bâtiments gouvernementaux</p>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/activities/photo8jpg.jpg" alt="" />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>Mémorial aux Juifs assassinés d’Europe</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>36 854</span>
+                </div>
+                <div><p>Monuments et statues</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="hotels">
+            <div class="first-column">
+              <h4>Se reposer</h4>
+              <p>Un mélange de charme, de symboles et de modernité.</p>
+              <a
+                href="https://www.tripadvisor.fr/Hotels-g187323-Berlin-Hotels.html"
+                ><span>Tout afficher</span>
+              </a>
+            </div>
+            <div class="carrousel">
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/hotels/exterior.jpg" alt="" />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>SO/ Berlin Das Stue</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>2 016</span>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/hotels/jungle-l.jpg" alt="" />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>25hours Hotel Bikini Berlin</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>2 603</span>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/hotels/exterior (1).jpg" alt="" />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>Hotel Adlon Kempinski Berlin</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>4 831</span>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img
+                    src="./assets/img/hotels/hotel-de-rome-rooftop.jpg"
+                    alt=""
+                  />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>Hotel de Rome</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <span>1 835</span>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/hotels/exterior-view.jpg" alt="" />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>Michelberger Hotel</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>1 203</span>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/hotels/lobby.jpg" alt="" />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div><h5>Regent Berlin, an IHG Hotel</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>1 980</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="restaurants">
+            <div class="first-column">
+              <h4>Se restaurer</h4>
+              <p>Bistrots et bars typiques, et plus encore à Berlin.</p>
+              <a
+                href="https://www.tripadvisor.fr/Restaurants-g187323-Berlin.html"
+                ><span>Tout afficher</span>
+              </a>
+            </div>
+            <div class="carrousel">
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/restaurants/mmmmm.jpg" alt="" />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div class="michelin">
+                  <div class="michelin-rate">
+                    <img
+                      class="two-stars"
+                      src="./assets/img/restaurants/2-Stars.svg"
+                      alt="2 Michelin stars"
+                    />
+                    <span>MICHELIN</span>
+                  </div>
+                </div>
+
+                <div><h5>Restaurant Tim Raue</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>1 173</span>
+                </div>
+                <div>
+                  <p>€€€€ • Asiatique, Fusion, Végétariens bienvenus</p>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/restaurants/photo0jpg.jpg" alt="" />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div class="michelin">
+                  <div class="michelin-rate">
+                    <span>MICHELIN</span>
+                  </div>
+                </div>
+                <div><h5>Mrs Robinson's</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_empty"></i>
+                  <span>132</span>
+                </div>
+                <div>
+                  <p>Internationale, Fusion</p>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/restaurants/facil.jpg" alt="" />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div class="michelin">
+                  <div class="michelin-rate">
+                    <img
+                      class="two-stars"
+                      src="./assets/img/restaurants/2-Stars.svg"
+                      alt="2 Michelin stars"
+                    />
+                    <span>MICHELIN</span>
+                  </div>
+                </div>
+                <div><h5>Restaurant Facil</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>956</span>
+                </div>
+                <div>
+                  <p>€€€€ • Internationale, Européenne, Europe centrale</p>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img
+                    src="./assets/img/restaurants/the-interior-early-in.jpg"
+                    alt=""
+                  />
+                  <div class="tcw">
+                    <i class="icon-travelers_choice_badge"></i>
+                    <div>2023</div>
+                  </div>
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div class="michelin">
+                  <div class="michelin-rate">
+                    <img
+                      class="one-star"
+                      src="./assets/img/restaurants/1-Star.svg"
+                      alt="1 Michelin star"
+                    />
+                    <span>MICHELIN</span>
+                  </div>
+                </div>
+                <div><h5>Cookies Cream</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <span>1 234</span>
+                </div>
+                <div><p>€€€€ • Européenne, Moderne, Saine</p></div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img src="./assets/img/restaurants/horvath.jpg" alt="" />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div class="michelin">
+                  <div class="michelin-rate">
+                    <img
+                      class="two-stars"
+                      src="./assets/img/restaurants/2-Stars.svg"
+                      alt="2 Michelin stars"
+                    />
+                    <span>MICHELIN</span>
+                  </div>
+                </div>
+                <div><h5>Restaurant Horváth</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_empty"></i>
+                  <span>432</span>
+                </div>
+                <div>
+                  <p>€€€€ • Autrichienne, Européenne, Europe centrale</p>
+                </div>
+              </div>
+              <div>
+                <div class="img-box">
+                  <img
+                    src="./assets/img/restaurants/delicious-bread-and-butter.jpg"
+                    alt=""
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                </div>
+                <div class="michelin">
+                  <div class="michelin-rate">
+                    <span>MICHELIN</span>
+                  </div>
+                </div>
+                <div><h5>Lode & Stijn</h5></div>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_full"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>111</span>
+                </div>
+                <div>
+                  <p>
+                    €€€€ • Européenne, Végétariens bienvenus, Plats sans gluten
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+          <p>
+            Made at
+            <a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a>
+            by
+            <a href="https://github.com/frischknechta" target="_blank"
+              >Adrien Frischknecht</a
+            >
+            - 2023
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal hidden">
+      <div>
+        <div class="form-container">
+          <i class="icon-times"></i>
+          <h2>Formulaire de contact</h2>
+          <form id="contact-form">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              value=""
+              placeholder="Prénom"
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              value=""
+              placeholder="Nom de famille"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value=""
+              placeholder="Email"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Écrivez votre message ici..."
+              cols="50"
+              rows="5"
+            ></textarea>
+            <input type="submit" id="submit-button" value="Envoyer le formulaire">
+              
+            </input>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
