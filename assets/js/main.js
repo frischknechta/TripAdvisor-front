@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/contact-form",
+        "https://site--backend-tripadvisor--79sf29g9cmjg.code.run/contact-form",
         data
       );
       if (response.status === 200) {
